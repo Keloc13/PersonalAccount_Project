@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="69dp"
+        android:id="@+id/id_inputName_create"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@id/id_inputName_create"
+        android:layout_alignEnd="@id/id_inputName_create"
+        android:id="@+id/id_inputPassword_create"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@id/id_inputPassword_create"
+        android:layout_alignStart="@id/id_inputPassword_create"
+        android:id="@+id/id_inputPassword_create_confirm"/>
+
+    <TextView
+        android:text="@string/input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_inputPassword_create"
+        android:layout_toStartOf="@+id/id_inputName_create"
+        android:id="@+id/id_view_name"/>
+
+    <TextView
+        android:text="@string/input_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_input_birthday_confirm"
+        android:layout_toStartOf="@+id/id_inputPassword_create_confirm"
+        android:id="@+id/id_ViewPassword_confirm"/>
+
+    <TextView
+        android:text="@string/input_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/id_input_birthday_confirm"
+        android:layout_toStartOf="@+id/id_input_birthday_confirm"
+        android:id="@+id/id_view_birthday"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/id_input_birthday_confirm"
+        android:layout_below="@+id/id_inputPassword_create_confirm"
+        android:layout_toEndOf="@+id/id_ViewPassword_confirm"/>
+
+    <TextView
+        android:text="@string/input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_inputPassword_2"
+        android:layout_above="@+id/id_inputPassword_create_confirm"
+        android:layout_alignStart="@+id/id_view_birthday"/>
+
+    <Button
+        android:text="@string/button_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_view_birthday"
+        android:layout_toEndOf="@+id/id_view_birthday"
+        android:layout_marginTop="44dp"
+        android:id="@+id/id_button_create_confirm"/>
+
+</RelativeLayout>
